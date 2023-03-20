@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="index.css">
+      <script type = "text/javascript" src="index.js"></script> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>Ride the City</title>
+   </head>
+   <body>
+      <div class="video_contenedor">
+         <video src="horizonte.mp4" autoplay muted loop></video>
+      </div>
+      
+      <nav>
+         <div class="logo">Brand</div>
+         <!-- boton menu t1oggle  -->
+         <span class="menubtn" onclick="openNav()">&#9776;</span>
+
+         <!-- Menu-->
+         <div class="navLinks">
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Contact</a></li>
+               <button type="button">Login</button>
+            </ul>
+         </div>
+      </nav>
+
+      <!-- responsive side nav-->
+      <div class="sideNav" id="sidenav">
+         <a href="#" class="closeBtn" onclick="closeNav()">&#10006;</a>
+         <a href="#">Home</a>
+         <a href="#">About</a>
+         <a href="#">Services</a>
+         <a href="#">Contact</a>
+         <a href="#"><button type="button">Login</button></a>
+      </div>
+
+      <!-- Cabecera con el contenido de la imagen del banner-->
+         
+      <div class="row">
+         <div class="column1">
+            <h1> Ride the City!</h1>
+            <p> Join us to feel the <strong>vibrations</strong>  around the city!</p>
+            <button id="focusButton" onclick="showForm(), focusForm()">CONTACT</button>
+         </div>
+         <div class="column2">
+            <img src="Dibujo_zapatillas.jpeg" alt="Dibujo zapatillas" width="500px">
+         </div>
+      </div>
+         <!-- FORMULARIO-->
+      <div class="container">
+         <form id="formElement" style="display: none;">
+            <h2 style="text-align:center">Choose an european city, then an experience and we will provide with new shoes!!</h2>
+
+               <label for="city">Choose a city:</label>
+               <select id="city" name="city">
+                  <option value="madrid">Madrid</option>
+                  <option value="london">London</option>
+                  <option value="paris">Paris</option>
+                  <option value="berlin">Berlin</option>
+               </select>
+               <label for="city">Choose your experiencie:</label>
+               <select id="experiencie" name="experiencie">
+                  <option value="skate">SKATE the town</option>
+                  <option value="parkour">PARKOUR in the city</option>
+                  <option value="climb">CLIMB historic buildings</option>
+                  <option value="boxing">Boxing in emblematic places</option>
+               </select>
+               <label for="name">Name: </label>
+               <input type="text" class="field" placeholder="Your name">
+               <label for="email">Email </label>
+               <input type="email" class="field" placeholder="Your Email">
+               <button type="submit"  class="btn" onclick="openPopup(); closeForm()">Submit</button>
+         </form>
+      </div>
+         <!-- POPUP-->
+      <div class="popup" id="popup" hidden>
+         <h2>Thank You!</h2>
+         <p>Your details has been successfully submited.</p>
+         <button type="button" onclick="closePopup()">OK</button>
+
+      </div>
+      
+      <footer>
+         <h4>Esta web ha sido creada para un ejerccio de clase del curso de Full Stack de Factoría 5</h4>
+         <p> Imagen gráfica creada por el diseñador e ilutrador <a href="https://www.behance.net/KodyMason" class="a_footer">Kody Mason</a> para la representación de las Nike Air Max Parra.<br>
+                Video de fondo de fondo <a href="https://pixabay.com/es/" class="a_footer">pixabay.com</a>
+         </p>
+      
+      </footer>
+
+   </body>
+</html>
