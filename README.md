@@ -7,3 +7,5 @@ El diseño resposive lo he realizado usando la etiqueta *viewport* y ditintos *@
 
 El proyecto contiene los archivos correspondientes a las imágenes y los tres elmentos principales index.html, index.css, index.js. 
 ![desktop](https://github.com/monicadefran/Responsive_Landing_Page/blob/master/imagenes_web/desktop.png)
+
+![desktop](https://github.com/monicadefran/Responsive_Landing_Page/blob/master/imagenes_web/mobile.png)
